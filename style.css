@@ -1,0 +1,21 @@
+:root{--bg:#f7f5ff;--fg:#1d1b2e;--card:#fff;--acc:#6a4cff;--muted:#5d5a72;font-size:16px}
+.dark{--bg:#14121f;--fg:#efeaff;--card:#211e33;--acc:#a996ff;--muted:#b9b4d0}
+.hc{--bg:#000;--fg:#fff;--card:#000;--acc:#ff0;--muted:#fff}.hc *{border-color:#fff!important}
+.big{font-size:20px}
+body{margin:0;font-family:"Inter",system-ui,sans-serif;background:var(--bg);color:var(--fg);line-height:1.5;transition:background .3s}
+.skip{position:absolute;left:-999px}.skip:focus{left:1rem;top:1rem;background:var(--acc);color:#fff;padding:.5rem}
+header{max-width:900px;margin:auto;padding:2rem 1rem 0}h1{margin:0;font-size:2.4rem;color:var(--acc)}
+.controls button{background:none;color:var(--fg);border:2px solid var(--muted);margin:.2rem}
+main{max-width:900px;margin:auto;padding:1rem;display:grid;gap:1.2rem}
+section{background:var(--card);border-radius:18px;padding:1.4rem;box-shadow:0 4px 20px #0000000f;border:1px solid #0000}
+.hero{background:linear-gradient(135deg,var(--acc),#ff7ab6);color:#fff}.hc .hero{background:#000;color:#ff0;border:2px solid #ff0}
+.now{font-size:1.8rem;font-weight:700;margin:.4rem 0 1rem}
+label{display:block;font-weight:600;margin-top:.6rem}input,select{width:100%;padding:.7rem;font-size:1rem;border-radius:10px;border:2px solid var(--muted);background:var(--card);color:var(--fg);box-sizing:border-box}
+button{font-size:1rem;padding:.7rem 1.1rem;border-radius:999px;border:0;background:var(--acc);color:#fff;cursor:pointer;margin-top:.8rem;min-height:44px}
+.hero button{background:#fff;color:#3a2a99}.hc button{background:#ff0;color:#000}
+:focus-visible{outline:4px solid #ffb703;outline-offset:2px}
+.week{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:.6rem}
+.day{border:2px solid #0001;border-radius:12px;padding:.6rem;min-height:80px}.day h3{margin:0 0 .3rem;font-size:.95rem}
+.day.heavy{border-color:#ff5c7a}.task{font-size:.9rem;display:flex;justify-content:space-between;gap:.3rem}.task button{margin:0;padding:0 .4rem;min-height:auto;background:none;color:var(--muted)}
+footer{text-align:center;color:var(--muted);padding:1rem}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}

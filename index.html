@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Calm Week — student planner</title><link rel="stylesheet" href="style.css"></head>
+<body><a class="skip" href="#main">Skip to content</a>
+<header><h1>Calm Week</h1><p>A planner that shows you one thing at a time.</p>
+<div class="controls" role="group" aria-label="Display settings"><button id="theme" aria-pressed="false">🌙 Dark</button><button id="contrast" aria-pressed="false">◐ High contrast</button><button id="bigtext" aria-pressed="false">A+ Larger text</button></div></header>
+<main id="main">
+<section aria-labelledby="now-h" class="hero"><h2 id="now-h">Right now</h2><p id="now" class="now" aria-live="polite">Nothing planned. Add a task below.</p><button id="done">✓ Done — next</button></section>
+<section aria-labelledby="add-h"><h2 id="add-h">Add a task</h2><form id="f"><label for="t">Task</label><input id="t" required maxlength="80" placeholder="Read chapter 4">
+<label for="d">Day</label><select id="d"></select><label for="e">Energy needed</label><select id="e"><option value="1">🟢 Low</option><option value="2">🟡 Medium</option><option value="3">🔴 High</option></select><button>Add</button></form></section>
+<section aria-labelledby="wk-h"><h2 id="wk-h">This week</h2><div id="week" class="week"></div><p id="load"></p></section>
+</main><footer>Saved privately in your browser.</footer><script src="app.js"></script></body></html>
